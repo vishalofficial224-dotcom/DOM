@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EventListerner</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background:  url(background.jpg), no-repeat;
+            background-size: cover;
+            
+        }
+
+        .container {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            /* border: 2px solid wheat; */
+            width: 100%;
+            height: 100vh;
+            
+            
+            
+        }
+
+        .boxes {
+            border: 2px solid wheat;
+            border-radius: 15px;
+            height: 60%;
+            width: 20%;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            justify-content: space-evenly;
+            /* background: rgba(255,255,255,0.2); */
+            backdrop-filter: blur(2px);
+        }
+
+        h1 {
+            color: wheat;
+        }
+
+        .btn {
+            padding: 10px;
+            background-color: rgba(0, 0, 0, 0.5);
+            border: 2px solid wheat;
+            border-radius: 8px;
+            font-size: 20px;
+            width: 50%;
+            color: wheat;
+
+        }
+
+        .btn:hover {
+            background-color: rgba(0, 0, 0, 0.1);
+            cursor: pointer;
+        }
+
+
+    </style>
+</head>
+<body>
+
+    <h1 id="main-heading"></h1>
+    <div class="container">
+
+        <div class="boxes box-1">
+            <h1 id="heading">Example 1</h1>
+            <button id="btn1" class="btn">Enter</button>
+        </div>
+
+        <div class="boxes box-2">
+            <h1 id="heading">Example 2</h1>
+            <button id="btn2" class="btn">Enter</button>
+        </div>
+
+        <div class="boxes box-3">
+            <h1 id="heading">Example 3</h1>
+            <button id="btn3" class="btn">Enter</button>
+        </div>
+
+    </div>
+
+    <script src="even_listeners.js"></script>
+    
+</body>
+</html>
