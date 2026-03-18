@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        input {
+            /* to get these methods we will use getComputedStyle(); */
+        }
+    </style>
+</head>
+<body>
+    <div class="div">
+        <h1>change this text</h1>
+    <input type="text" id="username" placeholder="username" style="">
+    </div>
+    <script>
+        let inputBox = document.getElementById("username");
+
+        // // console.log(inputBox.style)
+        // inputBox.style.backgroundColor = "green";
+        // inputBox.style.fontSize = "59px"
+        // let bdy = document.querySelector(".div");
+        // bdy.style.backgroundColor = "blue"
+
+        let changeH1 = document.querySelector("h1");
+        changeH1.innerText = "i got changed"
+        // window.getComputedStyle(element, pseudoElement)
+        console.log(window.getComputedStyle(inputBox))
+        //getComputedStyle();
+    
+
+    </script>
+</body>
+</html>

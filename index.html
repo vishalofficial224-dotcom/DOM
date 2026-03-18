@@ -1,76 +1,38 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html> <!--document type node-->
+<html lang="en"> 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <style>
-        * {
-            padding: 0;
-            margin: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            display: grid;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            background: url(background.jpg), no-repeat;
-            background-size: cover;
-        }
-
-        .container {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
-            height: 90vh;
-            width: 1000px;
-            border: 2px solid wheat;
-            border-radius: 10px;
-        }
-
-        ul {
-            list-style-type: none;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
-
-        }
-
-        .list-items {
-            border: 2px solid black;
-            padding: 20px;
-            width: 900px;
-            text-align: center;
-            font-size: 20px;
-            margin: 2px;
-            background: wheat;
-        }
-
-        h1 {
-            color: wheat;
-            font-size: 40px;
-        }
-
-
-    </style>
 </head>
+<!--head, title, html are the element type node-->
 <body>
-    <div class="container">
-        <h1 id="main-heading">Fav Movie Franchise</h1>
-        <ul>
-            <li class="list-items">
-                <span>Neo</span>
-                The Matrix</li>
-            <li class="list-items">Star Wars</li>
-            <li class="list-items">Harry Potter</li>
-            <li class="list-items">Lord of the Rings</li>
-            <li class="list-items">Marvel</li>
-        </ul>
+    <!-- comment -->  <!--this is node-->
+    <p id="message">text node</p>    <!--text node-->
+    <button type="radio" name="nameAttribute" value="Python"></button>
+    <h1 class="className">access me using my tag name</h1>
+    <h2 class="className">class name</h2>
+
+    <div class="title">
+        <p class="text1">its child element 1</p>
+        <p class="text2">its child element 2</p>
+        <p class="text3">its child element 3</p>
+        <p class="text4">its child element 4</p>
+        <p class="text5">its child element 5</p>
     </div>
-    <script src="app.js"></script>
+
+    <ul id="menu">
+        <li>home</li>
+        <li>about</li>
+        <li>blog</li>
+        <li>project</li>
+    </ul>
+
+    <input type="text" id="username" placeholder="username">
+
+    <script src="dom_manipulation.js">
+
+    </script>
 </body>
+
 </html>

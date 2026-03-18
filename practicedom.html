@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <p id="changeMe">change me</p>
+    <button id="click" onclick="change()"  >click me</button>
+    
+
+    <script>
+        //creating html elements
+        const newDiv = document.createElement('div');
+        const newPara = document.createElement('p');
+        const newElementTwo = document.createElement('p');
+        const newElement = document.createElement('h1');
+
+        //seclecting element
+        const selectElement = document.querySelector('body');
+        
+
+        newPara.innerText = 'hii new para'
+        newElementTwo.innerText = "i am new paragraph"
+        newElement.innerHTML = "hello this is my new html"
+
+        //styling using js
+        newElementTwo.style.fontSize = '100px';
+        selectElement.style.display = 'flex';
+        selectElement.style.alignItems = 'center';
+        selectElement.style.justifyContent = 'center';
+        selectElement.style.height = '100vh';
+        selectElement.style.flexDirection = 'column';
+        selectElement.style.border = '2px solid black'
+        selectElement.style.background = 'green'
+
+
+
+
+        //append a child, remove an element, replace an element.
+
+        //append
+        selectElement.append(newElement);
+        selectElement.append(newElementTwo);
+
+        //append to parent.
+        document.body.appendChild(newDiv);
+        document.body.appendChild(newPara)
+
+
+
+        //getting attributes
+        console.log(newDiv.getAttribute('type')) //getting attribute.
+        newDiv.setAttribute('class', 'normal') //setting attribute.
+        console.log(newDiv.getAttribute('class')) //getting attribute.
+
+
+        //difference between className and classList
+        let txt = document.querySelector('h1');
+        txt.classList.toggle('chengu');
+        txt.classList.toggle('chenguTwo');
+        txt.classList.toggle('pagla');
+        txt.className = 'newClassClassName'
+        
+        
+        
+        //adding, removing, toggle classes?
+        newPara.classList.add('newClassList', 'apple', 'banana')//using this you can add list of classes.
+        newPara.className = 'className' //it also add class but remove all others classes
+
+        newPara.classList.toggle('name', false); //add/remove switch
+        newPara.classList.toggle('name', true); //add/remove switch
+        newPara.classList.remove('className');
+
+        const btn = document.getElementById('click');
+        const para = document.getElementById('changeMe');
+
+        function change() {
+            para.innerHTML = 'i got changed'
+        }
+
+        document.body.style.backgroundColor = 'red'
+
+
+       
+
+    </script>
+</body>
+</html>
